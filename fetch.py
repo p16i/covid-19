@@ -7,8 +7,7 @@ req = requests.get(URL)
 data = req.json()
 print(data)
 
-csv = f"""
-,ข้อมูลอัปเดต เมื่อ {data['UpdateDate']}
+csv = f""",ข้อมูลอัปเดต เมื่อ {data['UpdateDate']}
 จำนวนคนที่<b>ถูกตรวจและมีผลบวก</b>เพิ่มเติม,{data['NewConfirmed']}
 จำนวนผู้ป่วยที่<b>เสียชีวิต</b>ในวันนี้,{data['NewDeaths']}
 """
